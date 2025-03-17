@@ -1,0 +1,39 @@
+/* 
+   A partir de 900px, se pasa a 3 columnas y se oculta el botón hamburguesa.
+*/
+
+/* Grid en 3 columnas */
+.grid-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Ocultar botón hamburguesa */
+#hamburgerBtn {
+  display: none !important;
+}
+
+
+#primaryNav {
+  display: block !important;
+  position: static;
+  width: auto;
+  height: auto;
+  padding-top: 0;
+  background-color: transparent;
+}
+
+#primaryNav ul {
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0;
+}
+
+main {
+  max-width: 1200px;
+}
+
+header h1 {
+  font-size: 2rem;
+  display: block !important;
+}
