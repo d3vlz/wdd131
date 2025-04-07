@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmación de envío de reseña">
+    <meta name="author" content="Tu Nombre">
+    <title>Reseña Enviada</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>¡Gracias por tu reseña!</h1>
+    </header>
+    
+    <main class="confirmation">
+        <div class="confirmation-card">
+            <div class="icon-check">✓</div>
+            <h2>Tu reseña ha sido enviada con éxito</h2>
+            <p>Valoramos tu opinión y la utilizaremos para mejorar nuestros productos.</p>
+            
+            <div class="review-details">
+                <h3>Resumen de tu reseña:</h3>
+                <div id="reviewSummary">
+                    <!-- Los detalles serán llenados por JavaScript -->
+                </div>
+            </div>
+            
+            <div class="review-counter">
+                <p>Has enviado <span id="reviewCount">0</span> reseña(s) desde este dispositivo.</p>
+            </div>
+            
+            <a href="form.html" class="back-btn">Enviar otra reseña</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Luis Zegarra | Política de Privacidad | Términos de Uso</p>
+        <p>WDD 131 - Asignación W05: Formulario de Reseña de Productos</p>
+    </footer>
+
+    <script src="scripts/review.js"></script>
+</body>
+</html>

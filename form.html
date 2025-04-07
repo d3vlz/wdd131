@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de reseña de productos">
+    <meta name="author" content="Tu Nombre">
+    <title>Formulario de Reseña de Productos</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Reseña de Productos</h1>
+        <p>Comparte tu experiencia con nuestros productos</p>
+    </header>
+    
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <div class="form-group">
+                <label for="product">Nombre del Producto</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Selecciona un Producto...</option>
+                    <!-- Opciones generadas dinámicamente con JavaScript -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Valoración General</label>
+                <div class="rating">
+                    <div class="star-container">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5" class="star">★</label>
+                        
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" class="star">★</label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" class="star">★</label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" class="star">★</label>
+                        
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" class="star">★</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installDate">Fecha de Instalación</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Características Útiles</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature1" name="features" value="Fácil de instalar">
+                        <label for="feature1">Fácil de instalar</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature2" name="features" value="Calidad premium">
+                        <label for="feature2">Calidad premium</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature3" name="features" value="Buen valor por el dinero">
+                        <label for="feature3">Buen valor por el dinero</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature4" name="features" value="Diseño atractivo">
+                        <label for="feature4">Diseño atractivo</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature5" name="features" value="Soporte rápido">
+                        <label for="feature5">Soporte rápido</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Tu Reseña</label>
+                <textarea id="review" name="review" rows="5" placeholder="Comparte tu experiencia con el producto..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Nombre de Usuario</label>
+                <input type="text" id="userName" name="userName" placeholder="Opcional">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Enviar Reseña" class="submit-btn">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Luis Zegarra | Política de Privacidad | Términos de Uso</p>
+        <p>WDD 131 - Asignación W05: Formulario de Reseña de Productos</p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+</html>
